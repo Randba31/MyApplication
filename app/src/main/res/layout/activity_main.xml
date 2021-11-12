@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#DFD8D8"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Lable"
+        android:layout_width="259dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="604dp"
+        android:autoText="false"
+        android:text="Convert"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Input"
+        android:layout_width="317dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="484dp"
+        android:ems="10"
+        android:hint="Enter in Dollar or Temperature"
+        android:hintTextColor="#757575"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Lable"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/resultMain"
+        android:layout_width="307dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="229dp"
+        android:hint="Result"
+        android:textAlignment="textStart"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NISbtnMain" />
+
+    <Button
+        android:id="@+id/NISbtnMain"
+        android:onClick="converttoNIS"
+        android:layout_width="123dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="237dp"
+        android:layout_marginBottom="51dp"
+        android:text="Covert to NIS"
+        app:layout_constraintBottom_toTopOf="@+id/resultMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Input" />
+
+    <Button
+        android:id="@+id/FarbtnMain"
+        android:onClick="converttoFahrenheit"
+        android:layout_width="136dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="100dp"
+        android:text="Convert to Fahrenheit"
+        app:layout_constraintBottom_toTopOf="@+id/resultMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/NISbtnMain"
+        app:layout_constraintTop_toBottomOf="@+id/Input" />
+
+    <Button
+        android:id="@+id/button5"
+        android:onClick="ToAnotherPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="235dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginBottom="25dp"
+        android:text="To The next page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultMain" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
